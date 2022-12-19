@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&family=Fjalla+One&family=Saira:wght@100&family=Titillium+Web&display=swap"
+        rel="stylesheet">
+    <title>Temperature converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="box">
+            <form id="converter" onsubmit="calculate1(); return false">
+                <label for="temperature">Please enter the Temperature value for conversion between Celsius and
+                    Fahrenheit </label>
+                <div class="input">
+                    <input type="number" name="temperature" id="temperature">
+                    <select name="select" id="select">
+                        <option value="cel">°Celsius</option>
+                        <option value="fer">°Fahrenheit</option>
+                    </select>
+                </div>
+                <input type="submit" name="temperature" class="sub"><br>
+                <span id="result" class="result"></span>
+
+            </form>
+        </div>
+
+        <div class="box">
+            <form id="converter2" onsubmit="calculate2(); return false">
+                <label for="temperature2">Please enter the Temperature value for conversion between Celsius and
+                    Kelvin</label>
+                <div class="input">
+                    <input type="number" name="temperature2" id="temperature2">
+                    <select name="select2" id="select2">
+                        <option value="cel2">°Celsius</option>
+                        <option value="kel">Kelvin</option>
+                    </select>
+                </div>
+                <input type="submit" name="temperature2" class="sub"><br>
+                <span id="result2" class="result"></span>
+            </form>
+        </div>
+
+        <div class="box">
+            <form id="converter3" onsubmit="calculate3(); return false">
+                <label for="temperature3">Please enter the Temperature value for conversion between Fahrenheit and
+                    Kelvin</label>
+                <div class="input">
+                    <input type="number" name="temperature3" id="temperature3">
+                    <select name="select3" id="select3">
+                        <option value="fer2">°Fahrenheit</option>
+                        <option value="kel2">Kelvin</option>
+                    </select>
+                </div>
+                <input type="submit" name="temperature3" class="sub"><br>
+                <span id="result3" class="result"></span>
+            </form>
+        </div>
+
+    </div>
+   
+    <script src="index.js"></script>
+</body>
+
+</html>
